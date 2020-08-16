@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Tuner 1
+//  Guitar Tuner
 //
-//  Created by Nicholas Kim on 2020/08/15.
+//  Created by Nicholas Kim on 2020/07/20.
 //  Copyright © 2020 Nicholas Kim. All rights reserved.
 //
 
