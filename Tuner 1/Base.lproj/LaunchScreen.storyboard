@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick's Tuner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W22-o8-QVH">
-                                <rect key="frame" x="100" y="449.5" width="214" height="57"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <rect key="frame" x="97.5" y="449" width="219" height="58"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuningfork" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-6z-qBS">
-                                <rect key="frame" x="87" y="246" width="240" height="195"/>
+                                <rect key="frame" x="87" y="245.5" width="240" height="195"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="XyQ-Hs-KW9"/>
                                     <constraint firstAttribute="height" constant="195" id="xig-ty-mep"/>
