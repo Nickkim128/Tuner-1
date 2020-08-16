@@ -86,10 +86,10 @@ class TunerViewController: UIViewController {
         
         frequencyTrack.text = toNote(note: pitch.note) + " " + toSharpFlat(note: pitch.note)
         
-        if (errorRatio > 1){
+        if (errorRatio > 1.01){
             updown.text = "Tune Down"
         }
-        else if (errorRatio < 1){
+        else if (errorRatio < 0.99){
             updown.text = "Tune Up"
         }
         else{
