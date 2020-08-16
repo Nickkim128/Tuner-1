@@ -78,7 +78,10 @@ class TunerViewController: UIViewController {
         }
     }
     
-    // Gets the frequency through the microphone, gets the pitch to the nearest note, and calculates the errorRatio from the obtained frequency to the frequency of the closest note
+    /*Gets the frequency through the microphone, gets the pitch to the nearest note, calculates
+     the errorRatio from the obtained frequency to the frequency of the closest note,
+     displays the closest note, and indicates whether to tune up, tune down, or stay the same for the nearest note
+ */
     @objc func pollingTick() {
         let frequency = Double(tracker.frequency)
         let pitch = Pitch.findClosestNote(frequency)
@@ -98,6 +101,8 @@ class TunerViewController: UIViewController {
         
     }
     
+    
+    // Returns the String of the note
     func toNote(note: Note) -> String{
         if (note.aNote.rawValue == 0){
             return "A"
@@ -123,6 +128,7 @@ class TunerViewController: UIViewController {
         return "None Found"
     }
     
+    // Returns the String of whether a note is sharp or not
     func toSharpFlat(note: Note) -> String{
         if (note.aAccidental.rawValue == 1){
             return "Sharp"
