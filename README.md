@@ -12,11 +12,11 @@ This is the initial launch screen.
 
 This is initial homescreen that is shown on the app.
 
-![](images/NotTuned)
+![](images/NotTuned.PNG)
 
 Once the user hits the start button, the mic on the phone takes in audio input and showcases the nearest note to that frequency. If the note is not in tune to that nearest note, it says to tune up or down and displays the note in red, depending on if the played note is too high or too low.
 
-![](images/Tuned)
+![](images/Tuned.PNG)
 
 If the user gets within the 1% margin of error of the nearest note, the note is displayed in green and says "Got it" to the user.
 
