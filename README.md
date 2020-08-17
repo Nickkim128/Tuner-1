@@ -18,5 +18,5 @@ Once the user hits the start button, the mic on the phone takes in audio input a
 
 ![](images/Tuned.PNG)
 
-If the user gets within the 1% margin of error of the nearest note, the note is displayed in green and says "Got it" to the user.
+If the user gets within the 1% margin of error of the nearest note, the note is displayed in green and says "Got it" to the user. If the user hits the stop button, it returns the screen to the initial homescreen.
 
