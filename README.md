@@ -3,5 +3,5 @@ A tuner application that collects sound from the user, returns the nearest note 
 shows whether to tune up or down to that note with a 1% margin of error. FYI the AudioKit framework is not installed 
 in this GitHub Repository and must be installed into the Xcode Project for the app to work.
 
-/Users/nick/Downloads/IMG_0607.PNG
-z
+# Screenshots
+
