@@ -62,8 +62,6 @@ class TunerViewController: UIViewController {
             print(error.localizedDescription)
         }
         
-        frequencyTrack.font = frequencyTrack.font.withSize(70)
-        
         tuneTimer = Timer.scheduledTimer(timeInterval: tuneInterval, target: self, selector: #selector(pollingTick), userInfo: nil, repeats: true)
     }
     
@@ -78,9 +76,6 @@ class TunerViewController: UIViewController {
         if let instance = tuneTimer {
             instance.invalidate()
         }
-        
-        frequencyTrack.font = frequencyTrack.font.withSize(50)
-        frequencyTrack.textColor = UIColor.white
     }
     
     /*Gets the frequency through the microphone, gets the pitch to the nearest note, calculates
@@ -96,15 +91,12 @@ class TunerViewController: UIViewController {
         
         if (errorRatio > 1.01){
             updown.text = "Tune Down"
-            frequencyTrack.textColor = UIColor.red
         }
         else if (errorRatio < 0.99){
             updown.text = "Tune Up"
-            frequencyTrack.textColor = UIColor.red
         }
         else{
             updown.text = "Got It"
-            frequencyTrack.textColor = UIColor.green
         }
         
     }
@@ -136,7 +128,7 @@ class TunerViewController: UIViewController {
         return "None Found"
     }
     
-    // Returns the String of whether a note is sharp, flat, or natural
+    // Returns the String of whether a note is sharp or not
     func toSharpFlat(note: Note) -> String{
         if (note.aAccidental.rawValue == 1){
             return "Sharp"
